@@ -1,0 +1,32 @@
+# === SBT / Scala build artifacts ===
+target/
+project/target/
+project/project/target/
+*.class
+*.jar
+*.war
+
+# === Chisel / Simulation artifacts ===
+test_run_dir/
+*.vcd
+*.fst
+*.lxt
+*.lxt2
+*.json
+
+# === Generated Verilog output ===
+generated/
+generated_32/
+
+# === IDE & editor caches ===
+.metals/
+.bloop/
+.scala-build/
+.bsp/
+.vscode/
+.idea/
+*.iml
+
+# === OS junk ===
+.DS_Store
+Thumbs.db
