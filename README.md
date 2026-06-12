@@ -372,13 +372,14 @@ $readmemh("LerosSayingHello32.mem", Memory);
 - The default system frequency is **50 MHz**. Adjust the `frequency` parameter when generating Verilog if your board uses a different clock.
 - The UART baud‑rate generator calculates division factors from `frequency` — make sure to regenerate (or manually adjust `cntLoad` values) if you change the clock.
 
-### Resource Utilization (approximate, 32‑bit, `LerosSayingHello32.asm`)
+### Resource Utilization (Xilinx FPGA, 32‑bit, `LerosSayingHello32.asm`)
 
 | Resource | Count |
 | --- | --- |
-| LUTs | ~400 |
-| Flip‑Flops | ~250 |
-| Block RAMs | 2 (1 instruction, 1 data) |
+| LUTs | 530 |
+| LUTRAM | 12 |
+| Flip‑Flops | 215 |
+| Block RAMs | 4.5 (0.5 instruction, 4 data) |
 
 Exact numbers depend on the synthesis tool and FPGA family.
 
